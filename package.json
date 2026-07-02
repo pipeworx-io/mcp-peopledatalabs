@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-peopledatalabs",
+  "version": "0.1.0",
+  "description": "People Data Labs MCP — wraps the PDL person/company enrichment API",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "peopledatalabs"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-peopledatalabs"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
