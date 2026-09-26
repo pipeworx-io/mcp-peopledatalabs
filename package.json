@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-peopledatalabs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "People Data Labs MCP — wraps the PDL person/company enrichment API",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-324b21410d5225487ab27185a896a2388d21bc1e7687d57faff932c9de9c7262",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-2dc3a495142f3fb686be5569f54f6c86140f6e6417087085c6ca05aad186e063",
+    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
   }
 }
