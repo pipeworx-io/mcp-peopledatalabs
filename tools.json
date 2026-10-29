@@ -1,0 +1,66 @@
+[
+  {
+    "name": "pdl_person_enrich",
+    "description": "Enrich a person from their email / LinkedIn / name+company / phone using People Data Labs. Returns job title, company, emails, phone numbers, location, and skills. Provide at least one identifier. Example: pdl_person_enrich({ email: \"sean@peopledatalabs.com\", _apiKey: \"your-key\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "description": "Email address of the person, e.g. \"sean@peopledatalabs.com\""
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number of the person, e.g. \"+14155551234\""
+        },
+        "profile": {
+          "type": "string",
+          "description": "LinkedIn profile URL, e.g. \"https://www.linkedin.com/in/seanthorne\""
+        },
+        "name": {
+          "type": "string",
+          "description": "Full name of the person, e.g. \"Sean Thorne\" (best combined with `company`)"
+        },
+        "company": {
+          "type": "string",
+          "description": "Company name or domain the person works at, e.g. \"People Data Labs\" or \"peopledatalabs.com\""
+        },
+        "min_likelihood": {
+          "type": "number",
+          "description": "Minimum match likelihood, integer 1-10. PDL only returns a person if confidence meets this floor."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Your People Data Labs API key (peopledatalabs.com; free tier ~100/mo)."
+        }
+      },
+      "required": [
+        "_apiKey"
+      ]
+    }
+  },
+  {
+    "name": "pdl_company_enrich",
+    "description": "Enrich a company from its name or domain using People Data Labs. Returns size, employee count, industry, founding year, location, LinkedIn, and website. Provide a name and/or website. Example: pdl_company_enrich({ website: \"peopledatalabs.com\", _apiKey: \"your-key\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Company name, e.g. \"People Data Labs\""
+        },
+        "website": {
+          "type": "string",
+          "description": "Company website or domain, e.g. \"peopledatalabs.com\""
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Your People Data Labs API key (peopledatalabs.com; free tier ~100/mo)."
+        }
+      },
+      "required": [
+        "_apiKey"
+      ]
+    }
+  }
+]
