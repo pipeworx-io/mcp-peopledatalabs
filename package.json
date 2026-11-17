@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-peopledatalabs",
-  "version": "0.2.1",
-  "description": "People Data Labs MCP — wraps the PDL person/company enrichment API (peopledatalabs.com).",
+  "version": "0.2.2",
+  "description": "Unofficial People Data Labs MCP — wraps the PDL person/company enrichment API (peopledatalabs.com).",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "peopledatalabs",
     "gatewaySlug": "peopledatalabs",
-    "sourceHash": "v1-12617dde0aab00ae476f5c41556bf4128f6572c8120ec7abcffc76e62447f179",
-    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
+    "sourceHash": "v1-97dea9275cd14ffc4bfab51ed50d05498db6bd08e1cf1106ba1d6330d61c4bcd",
+    "sourceCommit": "6e7ae693219a515a7ee6dd88d02390ab290fbad3"
   }
 }
